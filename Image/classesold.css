@@ -1,0 +1,120 @@
+
+:root {
+    --color-primary: #ff1e00;
+    --color-white: #e9e9e9;
+    --color-black: #141d28;
+    --color-black-1: #212b38;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  body {
+    
+font-size: 10px;
+
+   
+  }
+  .logo {
+    color: var(--color-white);
+    font-size: 30px;
+  }
+  .logo span {
+    color: var(--color-primary);
+  }
+  .menu-bar {
+    background-color: var(--color-black);
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    position: relative;
+    
+  }
+  .menu-bar ul {
+    list-style: none;
+    display: flex;
+  }
+  .menu-bar ul li {
+     width: 120px; 
+    padding: 10px 20px;
+     text-align: center; 
+    position: relative;
+  }
+  .menu-bar ul li a {
+    font-size: 17px;
+    color: var(--color-white);
+    text-decoration: none;
+    transition: all 0.3s;
+  }
+  .menu-bar ul li a:hover {
+    color:red;
+  }
+  .fas {
+    float: right;
+    margin-left: 1px;
+    padding-top: 3px;
+  }
+  /* dropdown menu style */
+  .dropdown-menu {
+    display: none;
+  }
+  .menu-bar ul li:hover .dropdown-menu {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 80%;
+    background-color: var(--color-black);
+  }
+  .menu-bar ul li:hover .dropdown-menu ul {
+    display: block;
+    margin: 5px;
+  }
+  .menu-bar ul li:hover .dropdown-menu ul li {
+    width: 70px;
+    padding: 10px;
+  }
+  .dropdown-menu-1 {
+    display: none;
+  }
+  .dropdown-menu ul li:hover .dropdown-menu-1 {
+    display: block;
+    position: absolute;
+    left: 70px;
+    top: 0;
+    background-color: var(--color-black);
+  }
+  
+  .h1{
+   
+
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .h1 img{
+    max-width: auto;
+    padding-top: none;
+    padding: left 50px; 
+    padding-right: 2px;
+  max-height: fit-content;
+  }
+  .swiper{
+    width: 100%;
+    height: fit-content;
+  }
+  .swiper-slide img{
+    width: 100%;
+  }
+  .swiper .swiper-button-prev,.swiper .swiper-button-next{
+    color:#e9e9e9;
+  }
+.swiper.swiper-pagination-bullet-active{
+    color: #ff1e00;
+}

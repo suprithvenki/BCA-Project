@@ -1,0 +1,90 @@
+:root {
+  --color-primary: #ff1e00;
+  --color-white: #e9e9e9;
+  --color-black: #141d28;
+  --color-black-1: #212b38;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.menu-bar{
+    background-color:black;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;justify-content: space-between;
+    padding: 0 5%;
+}
+.logo{
+    color: red;
+    font-size: 30px;
+}
+.logo span{
+    color: var(--color-white);
+}
+.menu-bar ul{
+    list-style: none;
+    display: flex;
+}
+
+.menu-bar ul li{
+    padding: 8px 18px;
+    position: relative;
+}
+.menu-bar ul li a{
+    color: #e9e9e9;
+    text-decoration: none;
+    font-size: 16.6px;
+    transition: all 0.5s;
+}
+.menu-bar ul li a:hover{
+    color: white;
+    background: red;
+    text-transform: capitalize;
+}
+.dropdown_menu{
+    display: none;
+}
+.menu-bar ul li:hover .dropdown_menu{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: black;
+}
+.menu-bar ul li:hover .dropdown_menu ul{
+    display: block;
+    margin: 10px;
+}
+.menu-bar ul li:hover .dropdown_menu ul li{
+    width: 130px;
+    padding: 10px;
+}
+.fas{
+    float:right;
+    margin-left: 5px;
+    padding-top: 8px;
+}
+.dropdown_menu1{
+    display: none;
+}
+.dropdown_menu ul li:hover .dropdown_menu1{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 100px;
+    background-color: black;
+}
+#home{
+    height: 100vh;
+    width: 100%;
+    background:url(A3.jpg);
+    background-size: cover;
+    background-position: center;
+}
